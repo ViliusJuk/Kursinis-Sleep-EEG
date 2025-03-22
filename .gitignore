@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual env
+venv/
+
+# VS Code
+.vscode/
+
+# Temp failai
+*.tmp
+*.edf
+
+# Jupyter checkpoint'ai
+.ipynb_checkpoints/
