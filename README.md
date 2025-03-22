@@ -22,4 +22,14 @@
 
 ## 📁 Projekto struktūra
 
-kursinis2025/ │ ├── sleep-edf/ # Parsisiųsti EEG + hipnogramos failai ├── download.py # Duomenų parsisiuntimo ir nuskaitymo skriptas ├── vizualizacija.py # EEG vizualizacija ├── .gitignore ├── requirements.txt └── README.md
+```
+kursinis2025/
+├── sleep-edf/              # Parsisiųsti EEG + hipnogramos failai
+│   ├── SC4001E0-PSG.edf
+│   └── SC4001EC-Hypnogram.edf
+├── download.py             # Duomenų parsisiuntimo ir nuskaitymo skriptas
+├── vizualizacija.py        # EEG vizualizacija
+├── .gitignore
+├── requirements.txt
+└── README.md
+```
