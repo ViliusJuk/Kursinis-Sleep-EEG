@@ -39,9 +39,9 @@ plt.xlabel('Prognozuota')
 plt.ylabel('Tikroji')
 plt.title('Confusion Matrix')
 plt.tight_layout()
-plt.show()
 
 # Papildoma info
+report = classification_report(y_test, y_pred, target_names=['Wake', 'Stage 1'])
 print("\nIšsami klasifikavimo ataskaita:")
 print(classification_report(y_test, y_pred, target_names=['Wake', 'Stage 1']))
 
@@ -51,6 +51,17 @@ import os
 
 # Sukuriam katalogą, jei reikia
 os.makedirs("models", exist_ok=True)
+os.makedirs("reports", exist_ok=True)
+
+#išsaugom confusion matrix paveikslėlį
+plt.savefig("reports/confusion_matrix.png")
+print ("✅ Confusion Matrix paveikslėlis išsaugotas į reports/confusion_matrix.png")
+plt.show()
+
+# Išsaugom ataskaitą į tekstinį failą
+with open("reports/classification_report.txt", "w") as f:
+    f.write(report)
+print("✅ Klasifikacijos ataskaita išsaugota į reports/classification_report.txt")
 
 # Išsaugom modelį
 with open("models/svm_model.pkl", "wb") as f:
