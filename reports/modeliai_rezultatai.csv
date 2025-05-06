@@ -1,0 +1,8 @@
+Modelis,Tikslumas,Report_path,CM_image,Model_pkl
+SVM (linear),0.62,reports/SVM_linear_report.txt,reports/SVM_linear_confusion.png,models/SVM_linear.pkl
+SVM (rbf),0.88,reports/SVM_rbf_report.txt,reports/SVM_rbf_confusion.png,models/SVM_rbf.pkl
+SVM (poly),0.88,reports/SVM_poly_report.txt,reports/SVM_poly_confusion.png,models/SVM_poly.pkl
+SVM (sigmoid),0.5,reports/SVM_sigmoid_report.txt,reports/SVM_sigmoid_confusion.png,models/SVM_sigmoid.pkl
+Logistic Regression,0.62,reports/Logistic_Regression_report.txt,reports/Logistic_Regression_confusion.png,models/Logistic_Regression.pkl
+KNN,0.62,reports/KNN_report.txt,reports/KNN_confusion.png,models/KNN.pkl
+Decision Tree,0.5,reports/Decision_Tree_report.txt,reports/Decision_Tree_confusion.png,models/Decision_Tree.pkl
